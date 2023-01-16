@@ -1,0 +1,93 @@
+doctype "html"
+
+html (lang=en) {
+
+    head
+    {
+        meta (charset=utf-8)
+        meta (content="IE=edge" http-equiv=X-UA-Compatible)
+        meta (content="width=device-width, initial-scale=1" name=viewport)
+        title "ft/predicates Documentation"
+        link (href='https://unpkg.com/@primer/css@^20.2.4/dist/primer.css' rel=stylesheet)
+        link (href="./css/main.min.css" media=screen rel=stylesheet type="text/css")
+        script (src='https://cdn.jsdelivr.net/npm/html-tag-builder/src/html-tag-builder.min.js')
+        script (src="./js/main.min.js" type=module)
+    }
+    body
+    {
+        header
+        {
+
+            div
+            {
+                details (#toc
+                         .d-inline-block .details-overlay .details-reset .dropdown
+                         hidden) {
+                    summary (.btn aria-haspopup=true) {
+                        import "svgs/list-unordered"
+                        " Table of Contents"
+                    }
+                    div (.dropdown-menu .dropdown-menu-se) {
+                        ul
+                        {
+                            li { a (.dropdown-item href="#filters") "Top" }
+
+                            div (#toc-predicates-header .dropdown-header) "Predicates"
+                            ul (#toc-predicates-sections)
+                        }
+
+                        div (.dropdown-header) "Constants"
+                        ul (#toc-constants-sections)
+                        div (.dropdown-header) "Localization"
+                    }
+                } // end of details#toc
+                div (.d-inline-block) {
+                    a (.mr-2 href="https://github.com/soulshined/ft-predicates") "github"
+                    // a (href="https://packagist.org/packages/ft/predicates") "packagist"
+                }
+            } // end of div
+
+            h1 (.mt-3) "ft/predicates"
+        } // end of header.d-flex
+
+        main (.markdown-body .position-relative style="padding: 0 30px") {
+
+            import "templates/anchor-h2" {
+                h2 "Predicates"
+            }
+
+            div (#filters .d-flex .flex-justify-between) {
+                div (.BtnGroup) {
+                    button (.BtnGroup-item .btn aria-selected=true data-filter=all type=button) "All"
+                }
+            }
+
+            import "predicates/all"
+
+            import "templates/anchor-h2" {
+                h2 "Constants"
+            }
+
+            p "This package contributes the following global constants"
+
+            import "constants/all"
+
+            import "templates/anchor-h2" {
+                h2 "Localization"
+            }
+
+            import "localization/main"
+
+            import "templates/anchor-h2" {
+                h2 "FT.INI"
+            }
+
+            import "ft.ini/main"
+        } // end of main.markdown-body
+
+        // js {
+        //     window.scroll({top: document.body.offsetHeight })
+        // }
+    } // end of body
+
+}

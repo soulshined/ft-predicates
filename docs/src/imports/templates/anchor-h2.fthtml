@@ -1,0 +1,24 @@
+#vars
+
+    h2   "${ h2 }"
+    href "${ href }"
+
+#end
+
+#if len(@href) eq 0
+
+    #vars
+        href "${ @h2 }"
+    #end
+
+#end
+
+h2
+{
+
+    import "templates/anchor" {
+        href tcase(@h2 'lower')
+    }
+    @h2
+
+}

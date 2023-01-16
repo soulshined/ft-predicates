@@ -1,0 +1,91 @@
+    h3 (data-constant-category="Numbers") "Numbers"
+    dl(data-constant-category="Numbers") "<dt id=\"const-c_byte_max\">C_BYTE_MAX&nbsp;    <a id=\"anchor-const-c_byte_max\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_byte_max\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; 127</dd> <dt id=\"const-c_byte_min\">C_BYTE_MIN&nbsp;    <a id=\"anchor-const-c_byte_min\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_byte_min\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; -128</dd> <dt id=\"const-c_int_max\">C_INT_MAX&nbsp;    <a id=\"anchor-const-c_int_max\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_int_max\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; 2147483647</dd> <dt id=\"const-c_int_min\">C_INT_MIN&nbsp;    <a id=\"anchor-const-c_int_min\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_int_min\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; -2147483648</dd> <dt id=\"const-c_long_max\">C_LONG_MAX&nbsp;    <a id=\"anchor-const-c_long_max\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_long_max\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; 9223372036854775807</dd> <dt id=\"const-c_long_min\">C_LONG_MIN&nbsp;    <a id=\"anchor-const-c_long_min\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_long_min\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; -9223372036854775808</dd> <dt id=\"const-c_short_max\">C_SHORT_MAX&nbsp;    <a id=\"anchor-const-c_short_max\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_short_max\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; 32767</dd> <dt id=\"const-c_short_min\">C_SHORT_MIN&nbsp;    <a id=\"anchor-const-c_short_min\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_short_min\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; -32768</dd> <dt id=\"const-c_ubyte_max\">C_UBYTE_MAX&nbsp;    <a id=\"anchor-const-c_ubyte_max\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_ubyte_max\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; 255</dd> <dt id=\"const-c_uint_max\">C_UINT_MAX&nbsp;    <a id=\"anchor-const-c_uint_max\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_uint_max\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; 4294967295</dd> <dt id=\"const-c_ulong_max\">C_ULONG_MAX&nbsp;    <a id=\"anchor-const-c_ulong_max\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_ulong_max\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><ul class=\"tags\"><li class=\"tooltipped tooltipped-n\" data-tag=\"extn\" aria-label=\"Requires php bcmath extension\">bcmath</li></ul><dd>&lt;string&gt; 18446744073709551615</dd> <dt id=\"const-c_ushort_max\">C_USHORT_MAX&nbsp;    <a id=\"anchor-const-c_ushort_max\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-c_ushort_max\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd>&lt;int&gt; 65535</dd> <dt id=\"const-gmp_prime_false\">GMP_PRIME_FALSE&nbsp;    <a id=\"anchor-const-gmp_prime_false\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-gmp_prime_false\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><ul class=\"tags\"><li class=\"tooltipped tooltipped-n\" data-tag=\"extn\" aria-label=\"Requires php gmp extension\">gmp</li></ul><dd>&lt;int&gt; 0</dd> <dt id=\"const-gmp_prime_possible\">GMP_PRIME_POSSIBLE&nbsp;    <a id=\"anchor-const-gmp_prime_possible\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-gmp_prime_possible\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><ul class=\"tags\"><li class=\"tooltipped tooltipped-n\" data-tag=\"extn\" aria-label=\"Requires php gmp extension\">gmp</li></ul><dd>&lt;int&gt; 1</dd> <dt id=\"const-gmp_prime_true\">GMP_PRIME_TRUE&nbsp;    <a id=\"anchor-const-gmp_prime_true\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-gmp_prime_true\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><ul class=\"tags\"><li class=\"tooltipped tooltipped-n\" data-tag=\"extn\" aria-label=\"Requires php gmp extension\">gmp</li></ul><dd>&lt;int&gt; 2</dd>"    h3 (data-constant-category="Dates") "Dates"
+    dl(data-constant-category="Dates") "<dt id=\"const-rfc3339_full_date\">RFC3339_FULL_DATE&nbsp;    <a id=\"anchor-const-rfc3339_full_date\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-rfc3339_full_date\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd> Y-m-d</dd> <dt id=\"const-rfc3339_hour\">RFC3339_HOUR&nbsp;    <a id=\"anchor-const-rfc3339_hour\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-rfc3339_hour\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd> H</dd> <dt id=\"const-rfc3339_minute\">RFC3339_MINUTE&nbsp;    <a id=\"anchor-const-rfc3339_minute\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-rfc3339_minute\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd> i</dd> <dt id=\"const-rfc3339_month_day\">RFC3339_MONTH_DAY&nbsp;    <a id=\"anchor-const-rfc3339_month_day\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-rfc3339_month_day\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd> d</dd> <dt id=\"const-rfc3339_month\">RFC3339_MONTH&nbsp;    <a id=\"anchor-const-rfc3339_month\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-rfc3339_month\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd> m</dd> <dt id=\"const-rfc3339_second\">RFC3339_SECOND&nbsp;    <a id=\"anchor-const-rfc3339_second\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-rfc3339_second\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd> s</dd> <dt id=\"const-rfc3339_year\">RFC3339_YEAR&nbsp;    <a id=\"anchor-const-rfc3339_year\" class=\"anchor\" aria-hidden=\"true\" href=\"#const-rfc3339_year\">
+        <svg class=\"octicon octicon-link\" aria-hidden=\"true\" height=16 version=\"1.1\" viewBox=\"0 0 16 16\" width=16>
+            <path fill-rule=\"evenodd\" d=\"M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z\"></path>
+        </svg>
+    </a><dd> Y</dd>"

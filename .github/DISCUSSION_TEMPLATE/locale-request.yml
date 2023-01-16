@@ -1,0 +1,42 @@
+labels:
+  - locale
+body:
+  - type: textarea
+    id: locale-ini
+    validations:
+      required: true
+    attributes:
+      label: locale-ini
+      description: Language translations
+      render: ini
+      value: |-
+        #weekdays
+        monday=
+        tuesday=
+        wednesday=
+        thursday=
+        friday=
+        saturday=
+        sunday=
+
+        #months
+        january=
+        february=
+        march=
+        april=
+        may=
+        june=
+        july=
+        august=
+        september=
+        october=
+        november=
+        december=
+  - type: input
+    id: agreement
+    attributes:
+      label: Agreement
+      description: "I agree I have read the [discussion contributing guide](https://github.com/soulshined/ft-predicates/discussions/1) for requesting new locale support and have checked this is not a duplicate"
+      placeholder: agree
+    validations:
+      required: true

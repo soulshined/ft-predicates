@@ -1,0 +1,30 @@
+labels:
+  - feature-request
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "A clear and concise description of feature request"
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: Minimal PHP Version
+      description: Denotes that this feature would only be supported by a version not currently targeted
+      value: N/A
+  - type: input
+    id: php-extn
+    attributes:
+      label: PHP Extension
+      description: Denotes that this feature would need a specific extension to be loaded (like bcmath, for example)
+      value: N/A
+  - type: input
+    id: agreement
+    attributes:
+      label: Agreement
+      description: "I agree I have read the [discussion contributing guide](https://github.com/soulshined/ft-predicates/discussions/1) for requesting new features and have checked this is not a duplicate"
+      placeholder: agree
+    validations:
+      required: true

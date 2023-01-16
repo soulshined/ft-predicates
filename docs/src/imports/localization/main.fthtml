@@ -1,0 +1,79 @@
+div { "<p>Most predicates are locale-aware; meaning they automatically adjust validations to the locale provided. For example, in United States, the decimal separator is a period (<code>.</code>) while in France it is a comma (<code>,</code>)</p>
+<p>Therefore a predicate like <code>is_actual_float</code> would validate accordingly to the locale. In United States, <code>1.5</code> would return true while for France it would only be true if the comma was used: <code>1,5</code> and in United States, <code>1,5</code> would return false</p>
+<p>Reasons why you would want to dynamically change locale is for many scenarios, most commonly is to load a page using the locale via <code>lang</code> env var or from the <code>HTTP_ACCEPT</code> header as to not use the server locale or php.ini value</p>
+<h3 id=\"how-ftpredicates-localization-works\">How ft/predicates Localization Works</h3>
+<blockquote>
+<p><span class=\"color-fg-danger\"><svg class=\"octicon octicon-danger mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hiddent=\"true\">
+<path fill-rule=\"evenodd\" d=\"M4.47.22A.749.749 0 0 1 5 0h6c.199 0 .389.079.53.22l4.25 4.25c.141.14.22.331.22.53v6a.749.749 0 0 1-.22.53l-4.25 4.25A.749.749 0 0 1 11 16H5a.749.749 0 0 1-.53-.22L.22 11.53A.749.749 0 0 1 0 11V5c0-.199.079-.389.22-.53Zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5ZM8 4a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 4Zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path>
+</svg> This package does not change any underlying configurations. Meaning, we do not call <code>setlocale</code> or <code>Locale::setDefault()</code>. We simply obtain the locale how you tell us and use that locale value within the scope of our needs
+</span></p>
+</blockquote>
+<blockquote>
+<p>Although this package does not change any configurations it tries it's best to align and honor normal php conventions, like obtaining the locale from php.ini for example</p>
+</blockquote>
+<p>The order of which locale is obtained by this package is as follows:</p>
+<ul>
+<li>Default to <a href=\"https://www.php.net/manual/en/intl.configuration.php\">php.ini configurations</a></li>
+<li>If an env variable <code>ft.ini</code> exists
+<ul>
+<li>Get ft.ini file using <code>getenv('ft.ini')</code></li>
+<li>If file exists
+<ul>
+<li>Retrieve the <a href=\"#anchor-ft.ini\"><code>locale_id_strategy</code></a> value if it exists</li>
+<li>Else use defaults</li>
+</ul>
+</li>
+<li>If file does not exist
+<ul>
+<li>Retrieve value from <code>getenv('ft.predicates.locale_id_strategy')</code> if it exists</li>
+<li>Else use defaults</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>In short, you can either tell the package which locale to use by telling it where to look for that value using either an <a href=\"#anchor-ft.ini\">ft.ini</a> file or by setting the values directly using <code>putenv</code> or simply do nothing and it will use the php.ini values</p>
+<p>Once the locale is established, all the locale-aware predicates will validate against that locale inherently.</p>
+<blockquote>
+<p><span class=\"color-fg-success\"><svg class=\"octicon octicon-danger mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hiddent=\"true\">
+<path fill-rule=\"evenodd\" d=\"M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z\"></path>
+</svg></span> There is no cross-locale support. Meaning, if a locale does not recognize English 'Monday' as a day of the week it would return false for something like <code>is_dayofweek()</code>. Conversely, if a locale does recognize english 'Monday' as a day of week and this package supports translations for that locale, the translations will also be provided. An example of that is <code>kr_KR</code> where either <code>is_dayofweek('Monday')</code> and <code>is_dayofweek('월요일')</code> would both return true</p>
+</blockquote>
+<p>All locale-based logic is done using:</p>
+<ul>
+<li><a href=\"https://www.php.net/manual/en/class.numberformatter.php\">NumberFormatter</a></li>
+<li><a href=\"https://www.php.net/manual/en/class.intlcalendar.php\">IntlCalendar</a></li>
+<li><a href=\"https://www.php.net/manual/en/class.intldateformatter.php\">IntlDateFormatter</a></li>
+<li><a href=\"https://www.php.net/manual/en/class.intlchar.php\">IntlChar</a></li>
+<li><a href=\"https://www.php.net/manual/en/class.collator.php\">Collator</a></li>
+</ul>
+<h3 id=\"list-of-supported-locales\">List of supported locales</h3>
+<blockquote>
+<p><span class=\"color-fg-accent\"><svg class=\"octicon mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hiddent=\"true\"> <path fill-rule=\"evenodd\" d=\"M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z\"></path></svg></span> All locales are supported that PHP supports (and the system)</p>
+</blockquote>
+<p>It's hard to identify a complete list of supported locale identifiers because it heavily depends on the system. In fact, <a href=\"https://www.php.net/manual/en/intl.configuration.php\">PHP docs</a> state:</p>
+<blockquote>
+<p>It is not recommended that the default <code>intl.default_locale</code> ini setting be relied on, as its effective value depends on the server's environment</p>
+</blockquote>
+<p>You can however explore the built-in ICU locales: <a href=\"https://icu4c-demos.unicode.org/icu-bin/locexp#language\">https://icu4c-demos.unicode.org/icu-bin/locexp#language</a></p>
+<p>The meaning of 'supported' locales has two variants in this package</p>
+<ul>
+<li>A supported locale in general means any PHP recognized locale will be honored for any locale-aware predicates. For example, all <code>DateTime</code> objects will be formatted using that locale naturally</li>
+<li>A 'supported' locale in the context of this package, means we have also added a translation file so that things like 'Monday' can be translated to the language of the provided locale when it is not an English language <em>and</em> the <code>IntlDateFormatter</code> returns an English value</li>
+</ul>
+<h3 id=\"dynamically-update-locale-identifiers\">Dynamically Update Locale Identifiers</h3>
+<p>The following alternatives to php.ini configs are supported for dynamically obtaining the locale identifier</p>
+<ul>
+<li>Create an <a href=\"#anchor-ft.ini\">ft.ini</a> file and supply values there
+<ul>
+<li>Once created, tell the package where to look with:
+<code>putenv('ft.ini=&lt;ft.ini path&gt;')</code></li>
+</ul>
+</li>
+<li>Tell ft/predicates where to look via <code>putenv</code>
+<ul>
+<li><code>putenv('ft.predicates.locale_id_strategy=&lt;choice&gt;')</code></li>
+<li><code>putenv('ft.predicates.locale_timezone_strategy=&lt;choice&gt;')</code></li>
+</ul>
+</li>
+</ul>" }

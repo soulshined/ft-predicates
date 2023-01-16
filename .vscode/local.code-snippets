@@ -1,0 +1,60 @@
+{
+    "new function" : {
+        "scope": "php",
+        "prefix": "function",
+        "body": [
+            "if (!exists('$1')) {",
+            "\tfunction $1(${2:mixed} \\$value) {",
+            "\t\t$0\n\t}",
+            "}"
+        ]
+    },
+    "simple test" : {
+        "prefix" : "simple test",
+        "description": "simple predicate test",
+        "scope" : "php",
+        "body" : [
+            "use FT\\Predicates\\Test\\SimplePredicateTest;\n",
+            "class $1Test extends SimplePredicateTest {",
+            "\n\tprotected const PREDICATE = '$2';\n",
+            "\tpublic function false_args(): array {",
+            "\t\treturn [",
+            "\t\t\t[$3]",
+            "\t\t];",
+            "\t}\n",
+            "\tpublic function true_args() : array {",
+            "\t\treturn[$0];",
+            "\t}\n",
+            "}"
+        ]
+    },
+    "powershell-predicate-doc" : {
+        "prefix" : "pred-doc, pdoc, predicate-doc",
+        "scope" : "powershell",
+        "body" : [
+            "Build-DocPredicate `",
+            "\t-Name '${1:${TM_FILENAME_BASE/^_?//}}$2' `",
+            "\t${3:-Signature '(${4|mixed $value,?string $value,string \\| int \\| float \\| null $value,string \\| DateTimeInterface \\| null $value,?string $value = null|}): ${5|bool,callable|}' `}",
+            "\t${6:-Disclaimer '$7' `}",
+            "\t-ReturnClause '${8:This predicate returns }$9' `",
+            "\t${10:-Tags ${11:locale-aware} `}",
+            "\t${12:-Related $13 `}",
+            "\t`",
+            "\t${14:-Body @'\n$15\n'@ `}",
+            "\t${16:-Examples @'\n$17\n'@}"
+        ]
+    },
+    "powershell-const-doc" : {
+        "prefix" : "const-doc, cdoc, constant-doc",
+        "scope" : "powershell",
+        "body" : [
+            "Build-DocConstant `",
+            "\t-Name '${1:${TM_FILENAME_BASE}}' `",
+            "\t-Value $2 `",
+            "\t${3:-DataType '${4|int,string,expr|}' `}",
+            "\t${5:-Tags ${6:extn:$7} `}",
+            "\t`",
+            "\t${8:-Body @'\n$9\n'@ }",
+        ]
+    }
+}

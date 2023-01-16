@@ -1,0 +1,9 @@
+{
+    "rootDir" : "./docs/src",
+    "exportDir": "./docs",
+    "importDir" : "./docs/src/imports",
+    "excluded": [
+        "**/imports/**"
+    ],
+    "debug" : true
+}

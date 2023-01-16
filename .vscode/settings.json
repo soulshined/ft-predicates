@@ -1,0 +1,38 @@
+{
+    "workbench.colorCustomizations": {},
+    "es6-css-minify.minifyOnSave": "exists",
+    "es6-css-minify.cssMinPath": "./docs/css",
+    "es6-css-minify.jsMinPath": "./docs/js",
+    "es6-css-minify.genJSmap": true,
+    "liveServer.settings.root": "./docs",
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.html": true,
+        "**/*.min.css*" : true,
+        "**/*.min.js*": true
+    },
+
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/*.html" : true,
+        "/vendor/**" : true,
+        "**/*.min.css*": true,
+        "**/*.min.js*": true
+    },
+
+    "php-built-in-server.server": {
+        "headless": {
+            "enabled": true,
+            "clearTerminalOnSave": true
+        },
+        "root": ".dev/index.php"
+    }
+}
