@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "FT\\Predicates\\Deprecation\\" : "src/deprecation",
-            "FT\\Predicates\\Locale\\" : "src/locale",
-            "FT\\Predicates\\Configurations\\" : "src/configurations"
+            "FT\\Predicates\\Deprecation\\" : "src/Deprecation",
+            "FT\\Predicates\\Locale\\" : "src/Locale",
+            "FT\\Predicates\\Configurations\\" : "src/Configurations"
         },
         "files": [
-            "./src/deprecation/deprecation.php",
+            "./src/Deprecation/deprecation.php",
             "./src/predicates.php"
         ]
     },
