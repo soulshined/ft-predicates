@@ -2,7 +2,7 @@
     "name": "ft/predicates",
     "description": "A simple, lightweight, dependency free PHP library for predicates and callbacks for dates, strings, numbers, versions etc",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "keywords": [
         "predicate",
@@ -42,7 +42,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
-        "ft/sets": "^1.0"
+        "ft/sets": "^1.0.1"
     },
     "scripts": {
         "test": [
